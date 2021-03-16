@@ -1,0 +1,1 @@
+python evaluate_model.py --model_loc ../model_nets/pytorch_models

@@ -1,0 +1,1 @@
+seq_number, [head pose: right(pos) / left(neg), up (pos) / down(neg)], [gaze: right(pos) / left(neg), up(pos) / down(neg)], timestamp

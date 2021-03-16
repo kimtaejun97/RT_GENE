@@ -1,0 +1,8 @@
+label_combined.txt
+This is the main file containing labels. The formatting is as follows:
+seq_number, [head pose: right(pos) / left(neg), up (pos) / down(neg)], [gaze: right(pos) / left(neg), up(pos) / down(neg)], timestamp
+
+label_headpose.txt
+This file contains more detail about the head pose of the subject.
+seq_number, [head pose translation: further(pos) / closer(neg), left(pos) / right(neg), up(pos) / down(neg)], [head pose rotation: roll right(pos) / roll left(neg), down(pos) / up(neg), rotate left(pos), rotate right(neg)], timestamp
+

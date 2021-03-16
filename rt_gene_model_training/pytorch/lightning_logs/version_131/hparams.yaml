@@ -1,0 +1,15 @@
+accumulate_grad_batches: 1
+augment: false
+batch_norm: true
+batch_size: 32
+benchmark: true
+dataset: rt_gene
+gpu: 1
+hdf5_file: C:\Users\user\rt_gene\rt_gene_model_training\rt_gene_dataset\rtgene_dataset.hdf5
+k_fold_validation: true
+learning_rate: 5.0e-05
+loss_fn: mse
+model_base: vgg
+num_io_workers: 0
+save_dir: C:\Users\user\rt_gene\rt_gene_model_training\model_nets\pytorch_checkpoints
+seed: 0
