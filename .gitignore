@@ -11,6 +11,8 @@ scripts/.idea*
 *.zip
 *.mp4
 *.hdf5
+*.gz
+*.tar
 
 
 # Model files

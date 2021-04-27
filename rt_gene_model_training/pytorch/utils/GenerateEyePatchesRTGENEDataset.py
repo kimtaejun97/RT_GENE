@@ -5,14 +5,13 @@ import os
 
 import cv2
 from tqdm import tqdm
-
 from rt_gene.extract_landmarks_method_base import LandmarkMethodBase
 
 script_path = os.path.dirname(os.path.realpath(__file__))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Estimate gaze from images')
-    parser.add_argument('im_path', type=str, default=os.path.join(script_path, '../samples/natural'),
+    parser.add_argument('im_path', type=str, default=os.path.join(script_path, '../../rt_gene_dataset/s000_glasses/inpinted/face'),
                         nargs='?', help='Path to an image or a directory containing images')
     parser.add_argument('--output_path', type=str, default=os.path.join(script_path, '../samples/'), help='Output directory for left/right eye patches')
 

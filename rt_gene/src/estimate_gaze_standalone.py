@@ -98,7 +98,7 @@ FPS = "0"
 gaze_error =[]
 headpose_error =[]
 
-EVAL =True
+EVAL =False
 SHIFT =False
 def estimate_gaze(base_name, color_img, dist_coefficients, camera_matrix ,label):
     global FPS
@@ -110,12 +110,12 @@ def estimate_gaze(base_name, color_img, dist_coefficients, camera_matrix ,label)
     faceboxes = landmark_estimator.get_face_bb(color_img)
 
     #draw bounding box
-    # for facebox in faceboxes:
-    #     left = int(facebox[0])
-    #     top = int(facebox[1])
-    #     right = int(facebox[2])
-    #     bottom = int(facebox[3])
-    #     cv2.rectangle(color_img,(left,top),(right,bottom),(0,255,0),2)
+    for facebox in faceboxes:
+        left = int(facebox[0])
+        top = int(facebox[1])
+        right = int(facebox[2])
+        bottom = int(facebox[3])
+        cv2.rectangle(color_img,(left,top),(right,bottom),(0,255,0),2)
 
 
     if len(faceboxes) == 0:
